@@ -115,7 +115,7 @@ _LEAD_PATTERN = re.compile(_LEAD_CLASS)
 # - Number of digits is limited.
 # - No whitespace is allowed at the start or end.
 # - No alpha digits (vanity numbers such as 1-800-SIX-FLAGS) are currently
-#   supported.
+#   unsupported.
 _PATTERN = re.compile(u("(?:") + _LEAD_CLASS + _PUNCTUATION + u(")") + _LEAD_LIMIT +
                       _DIGIT_SEQUENCE + u("(?:") + _PUNCTUATION + _DIGIT_SEQUENCE + u(")") + _BLOCK_LIMIT +
                       u("(?:") + _EXTN_PATTERNS_FOR_MATCHING + u(")?"),
